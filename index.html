@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Samsung — innovatsion texnologiyalar va zamonaviy elektronika">
+    <title>Samsung Uzbekistan | Official Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="navbar">
+
+            <a href="#" class="logo">SAMSUNG</a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#mobile">Mobile</a>
+                <a href="#tv">TV & AV</a>
+                <a href="#appliances">Home Appliances</a>
+                <a href="#computing">Computing</a>
+                <a href="#discover">Discover</a>
+            </nav>
+
+            <div class="nav-icons">
+                <button id="searchBtn" aria-label="Qidirish">
+                    <i class="fas fa-search"></i>
+                </button>
+
+                <button id="cartBtn" class="cart-icon" aria-label="Savat">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </button>
+
+                <button id="menuBtn" aria-label="Menyu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="search-box" id="searchBox">
+            <input type="text" id="searchInput" placeholder="Mahsulot qidirish...">
+            <button id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </header>
+
+    <!-- HERO SLIDER -->
+    <section class="hero">
+
+        <div class="hero-slide active">
+            <div class="hero-content">
+                <span class="eyebrow">GALAXY AI</span>
+                <h1>Galaxy S Series</h1>
+                <p>Kelajak texnologiyasini bugun his qiling.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-dark">Buy now</a>
+                    <a href="#products" class="btn btn-outline">Learn more</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=1200&q=85" alt="Samsung Galaxy smartphone">
+            </div>
+        </div>
+
+        <div class="hero-slide">
+            <div class="hero-content">
+                <span class="eyebrow">NEXT LEVEL ENTERTAINMENT</span>
+                <h1>Neo QLED TV</h1>
+                <p>Har bir tasvirda yangi dunyo.</p>
+                <div class="hero-buttons">
+                    <a href="#tv" class="btn btn-dark">Explore</a>
+                    <a href="#tv" class="btn btn-outline">Learn more</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1200&q=85" alt="Samsung television">
+            </div>
+        </div>
+
+        <div class="hero-slide">
+            <div class="hero-content">
+                <span class="eyebrow">BESPOKE AI</span>
+                <h1>Smart Living</h1>
+                <p>Uyingiz uchun aqlli texnologiyalar.</p>
+                <div class="hero-buttons">
+                    <a href="#appliances" class="btn btn-dark">Discover</a>
+                    <a href="#appliances" class="btn btn-outline">Learn more</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1200&q=85" alt="Modern home appliances">
+            </div>
+        </div>
+
+        <button class="slider-arrow prev" id="prevSlide" aria-label="Oldingi banner">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <button class="slider-arrow next" id="nextSlide" aria-label="Keyingi banner">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="slider-dots" id="sliderDots">
+            <button class="dot active" data-slide="0" aria-label="1-banner"></button>
+            <button class="dot" data-slide="1" aria-label="2-banner"></button>
+            <button class="dot" data-slide="2" aria-label="3-banner"></button>
+        </div>
+
+    </section>
+
+    <!-- CATEGORY -->
+    <section class="categories section" id="mobile">
+        <div class="section-heading">
+            <span>EXPLORE SAMSUNG</span>
+            <h2>Mahsulot kategoriyalari</h2>
+        </div>
+
+        <div class="category-list">
+            <a href="#products" class="category-item">
+                <i class="fas fa-mobile-screen-button"></i>
+                <span>Smartphones</span>
+            </a>
+            <a href="#products" class="category-item">
+                <i class="fas fa-tablet-screen-button"></i>
+                <span>Tablets</span>
+            </a>
+            <a href="#products" class="category-item">
+                <i class="fas fa-clock"></i>
+                <span>Watches</span>
+            </a>
+            <a href="#tv" class="category-item">
+                <i class="fas fa-tv"></i>
+                <span>Televisions</span>
+            </a>
+            <a href="#computing" class="category-item">
+                <i class="fas fa-laptop"></i>
+                <span>Monitors</span>
+            </a>
+            <a href="#appliances" class="category-item">
+                <i class="fas fa-snowflake"></i>
+                <span>Appliances</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="featured section" id="products">
+
+        <div class="section-heading">
+            <span>NEW GENERATION</span>
+            <h2>Discover our products</h2>
+            <p>O'zingizga mos Samsung mahsulotini tanlang.</p>
+        </div>
+
+        <div class="product-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="phone">Phones</button>
+            <button class="filter-btn" data-filter="tablet">Tablets</button>
+            <button class="filter-btn" data-filter="watch">Watches</button>
+            <button class="filter-btn" data-filter="tv">TV</button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+            <article class="product-card" data-category="phone" data-name="Samsung Galaxy S26 Ultra" data-price="15999000">
+                <span class="product-tag">NEW</span>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=700&q=85" alt="Galaxy smartphone">
+                </div>
+                <h3>Galaxy S26 Ultra</h3>
+                <p>Professional camera. Powerful AI.</p>
+                <strong>15 999 000 so'm</strong>
+                <button class="add-cart">Add to cart</button>
+            </article>
+
+            <article class="product-card" data-category="phone" data-name="Samsung Galaxy Z Fold" data-price="17999000">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=700&q=85" alt="Galaxy smartphone">
+                </div>
+                <h3>Galaxy Z Fold</h3>
+                <p>Unfold your world.</p>
+                <strong>17 999 000 so'm</strong>
+                <button class="add-cart">Add to cart</button>
+            </article>
+
+            <article class="product-card" data-category="tablet" data-name="Samsung Galaxy Tab" data-price="6999000">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=700&q=85" alt="Galaxy tablet">
+                </div>
+                <h3>Galaxy Tab</h3>
+                <p>Designed for productivity.</p>
+                <strong>6 999 000 so'm</strong>
+                <button class="add-cart">Add to cart</button>
+            </article>
+
+            <article class="product-card" data-category="watch" data-name="Samsung Galaxy Watch" data-price="2999000">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=85" alt="Smart watch">
+                </div>
+                <h3>Galaxy Watch</h3>
+                <p>Stay connected. Stay active.</p>
+                <strong>2 999 000 so'm</strong>
+                <button class="add-cart">Add to cart</button>
+            </article>
+
+            <article class="product-card" data-category="tv" data-name="Samsung Neo QLED TV" data-price="12999000">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=700&q=85" alt="Samsung TV">
+                </div>
+                <h3>Neo QLED TV</h3>
+                <p>Experience extraordinary visuals.</p>
+                <strong>12 999 000 so'm</strong>
+                <button class="add-cart">Add to cart</button>
+            </article>
+
+            <article class="product-card" data-category="phone" data-name="Samsung Galaxy Z Flip" data-price="9999000">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=700&q=85" alt="Galaxy smartphone">
+                </div>
+                <h3>Galaxy Z Flip</h3>
+                <p>Small phone. Big possibilities.</p>
+                <strong>9 999 000 so'm</strong>
+                <button class="add-cart">Add to cart</button>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- TV BANNER -->
+    <section class="wide-banner" id="tv">
+        <div class="wide-banner-content">
+            <span>ENTERTAINMENT REDEFINED</span>
+            <h2>See the bigger picture.</h2>
+            <p>Samsung televizorlari bilan yangi tajribaga ega bo'ling.</p>
+            <a href="#products" class="btn btn-light">Explore TVs</a>
+        </div>
+    </section>
+
+    <!-- APPLIANCES -->
+    <section class="smart-home section" id="appliances">
+        <div class="section-heading">
+            <span>SMART HOME</span>
+            <h2>Welcome to a smarter life</h2>
+            <p>SmartThings bilan barcha qurilmalaringizni boshqaring.</p>
+        </div>
+
+        <div class="smart-home-grid">
+            <div class="smart-card">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=85" alt="Modern home">
+                <div>
+                    <h3>Smart Living</h3>
+                    <a href="#discover">Discover more →</a>
+                </div>
+            </div>
+
+            <div class="smart-card">
+                <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=85" alt="Modern kitchen">
+                <div>
+                    <h3>Bespoke AI</h3>
+                    <a href="#discover">Discover more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISCOVER -->
+    <section class="discover section" id="discover">
+        <div class="section-heading">
+            <span>EXPLORE MORE</span>
+            <h2>Discover Samsung</h2>
+        </div>
+
+        <div class="discover-grid">
+            <div class="discover-card">
+                <i class="fas fa-brain"></i>
+                <h3>Galaxy AI</h3>
+                <p>Technology that understands you.</p>
+                <a href="#mobile">Learn more →</a>
+            </div>
+
+            <div class="discover-card">
+                <i class="fas fa-house-signal"></i>
+                <h3>SmartThings</h3>
+                <p>Connect your world.</p>
+                <a href="#appliances">Learn more →</a>
+            </div>
+
+            <div class="discover-card">
+                <i class="fas fa-shield-halved"></i>
+                <h3>Samsung Care+</h3>
+                <p>Protection for your devices.</p>
+                <a href="#footer">Learn more →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <h2>Stay in the loop</h2>
+        <p>Samsung yangiliklari va maxsus takliflaridan xabardor bo'ling.</p>
+        <form id="newsletterForm">
+            <input type="email" id="emailInput" placeholder="Email manzilingiz" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#" class="logo">SAMSUNG</a>
+                <p>Do What You Can't.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Products</h3>
+                <a href="#mobile">Mobile</a>
+                <a href="#tv">TV & AV</a>
+                <a href="#appliances">Home Appliances</a>
+                <a href="#computing">Computing</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Support</h3>
+                <a href="#footer">Contact us</a>
+                <a href="#footer">Help Center</a>
+                <a href="#footer">Warranty</a>
+                <a href="#footer">FAQ</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow us</h3>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://youtube.com" target="_blank">YouTube</a>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Samsung Website Demo. All rights reserved.</p>
+            <p>Created with HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="closeCart" aria-label="Savatni yopish">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <strong id="cartTotal">0 so'm</strong>
+            </div>
+            <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+        </div>
+    </aside>
+
+    <!-- PRODUCT MODAL -->
+    <div class="modal-overlay" id="productModal">
+        <div class="product-modal-content">
+            <button class="modal-close" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="Product" id="modalImage">
+            <h2 id="modalName"></h2>
+            <p id="modalDescription"></p>
+            <strong id="modalPrice"></strong>
+            <button id="modalAddCart" class="add-cart">Add to cart</button>
+        </div>
+    </div>
+
+    <script src="./style.css"></script>
+</body>
+</html>
